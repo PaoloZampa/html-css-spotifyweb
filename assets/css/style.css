@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #region utilities */
+
+:root{
+    --dark: #141922;
+    --darker: #000000;
+    --light: #d2d2d2;
+    --grey: #a3a3a3;
+    --green: #91d52d;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.direction_column {
+    flex-direction: column;
+}
+
+/* #endregion utilities */
+
+/* #region debug */
+
+.debug .top {
+    background-color: blueviolet;
+}
+
+.debug footer {
+    background-color: aqua;
+}
+
+.debug .sidebar {
+    background-color: bisque;
+}
+
+.debug .content {
+    background-color: brown;
+}
+
+.sidebar_bottom{
+    background-color: blue;
+}
+
+.sidebar_top{
+    background-color: chartreuse;
+}
+
+/* #endregion debug */
+
+/* #region top */
+
+.top {
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
+.top>.sidebar {
+    width: 70px;
+    overflow-y: hidden;
+}
+
+.top>.content {
+    width: calc(100% - 70px);
+    overflow-y: auto;
+}
+
+footer.bottom {
+    height: 80px;
+}
+
+.top .sidebar_top{
+    height: calc(100% - 60px);
+}
+
+.top .sidebar_bottom{
+    height: 60px;
+}
+
+/* #endregion top */
+
+/* #region footer */
+
+/* #endregion footer */
+
+
+/* #region mediaquery */
+
+@media screen and (min-width: 768px) {
+    .top>.sidebar {
+        width: 220px;
+    }
+
+    .top>.content {
+        width: calc(100% - 220px);
+    }
+}
+
+/* #endregion mediaquery */
