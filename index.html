@@ -441,7 +441,7 @@
             <div class="row d_flex">
 
                 <!-- nome brano -->
-                <div class="col_4">
+                <div class="col_4 track">
                     <div class="row d_flex">
 
                         <!-- img brano -->
@@ -465,10 +465,56 @@
                 </div>
 
                 <!-- play menu -->
-                <div class="col_4"></div>
+                <div class="col_4 play_menu">
+
+                    <!-- menu icons -->
+                    <div class="row d_flex">
+                        <div class="col_2">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                        <div class="col_2">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </div>
+                        <div class="col_2">
+                            <i class="fa-sharp fa-regular fa-circle-play"></i>
+                        </div>
+                        <div class="col_2">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </div>
+                        <div class="col_2">
+                            <i class="fa-sharp fa-solid fa-rotate-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- menu time bar -->
+                    <div class="row d_flex">
+                        <div class="col_2">
+                            <span>0.25</span>
+                        </div>
+                        <div class="col_8">
+                            <input type="range" id="progress">
+                        </div>
+                        <div class="col_2">
+                            <span>4:35</span>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- volume bar -->
-                <div class="col_4"></div>
+                <div class="col_4 volume">
+                    <div class="row d_flex">
+                        <div class="col_2 col_lg_1">
+                            <i class="fa-solid fa-list-ul"></i>
+                        </div>
+                        <div class="col_2 col_lg_1">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <div class="col_8 col_lg_6">
+                            <input type="range" id="progress">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </footer>
         <!-- /footer -->
