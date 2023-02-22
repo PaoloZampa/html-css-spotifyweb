@@ -39,12 +39,29 @@ img {
     flex-direction: column;
 }
 
+.jc_end {
+    justify-content: end;
+}
+
+
+.ta_r {
+    text-align: end;
+}
+
+.ta_c {
+    text-align: center;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
 
 .unstyled {
     list-style: none;
+}
+
+.col_1 {
+    width: calc(100% / 12 *1);
 }
 
 .col_2 {
@@ -131,7 +148,7 @@ img {
 /* sidebar */
 
 .top {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     display: flex;
 }
 
@@ -196,28 +213,59 @@ img {
 /* #region footer */
 
 footer.bottom {
-    height: 80px;
+    height: 90px;
+    background-color: var(--dark);
 }
 
-#progress{
+#progress {
     -webkit-appearance: none;
-    width: 90%;
+    width: 100%;
     height: 6px;
     background-color: #5f5f5f;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#progress::-webkit-slider-thumb{
+#progress::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background-color: #000000;
+    background-color: #2bdf13;
     height: 15px;
     width: 15px;
     border-radius: 50%;
 }
 
-.volume .row{
+.track .row {
+    height: 90px;
+    align-items: center;
+    color: var(--light);
+}
+
+.track [class^="col"] {
+    padding: 0 0.5rem;
+}
+
+.track span,
+.play_menu span {
+    font-size: 10px;
+}
+
+.volume .row {
     justify-content: end;
+    height: 90px;
+    color: var(--light);
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+.play_menu .row {
+    height: 45px;
+    color: var(--light);
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-circle-play{
+    font-size: 2rem;
 }
 
 /* #endregion footer */
@@ -272,11 +320,11 @@ footer.bottom {
     }
 
     .top>.sidebar {
-        width: 220px;
+        width: 230px;
     }
 
     .top>.content {
-        width: calc(100% - 220px);
+        width: calc(100% - 230px);
     }
 
     .top .logo_xs {
@@ -299,6 +347,10 @@ footer.bottom {
 
 /* MEDIAQUERY MD */
 @media screen and (min-width: 768px) {
+
+    .col_md_1 {
+        width: calc(100% / 12 * 1);
+    }
 
     .col_md_2 {
         width: calc(100% / 12 * 2);
