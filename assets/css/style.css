@@ -15,7 +15,7 @@ img {
 /* #region utilities */
 
 :root {
-    --dark: #141922;
+    --dark: #282828;
     --darker: #000000;
     --light: #d2d2d2;
     --grey: #a3a3a3;
@@ -255,17 +255,28 @@ img {
 }
 
 .content a {
+    color: var(--grey);
     text-decoration: none;
 }
 
 .upgrade {
-    background-color: var(--darker);
+    background-color: #080b1279;
     position: sticky;
     top: 0;
     right: 0;
-    height: 40px;
+    height: 90px;
     justify-content: end;
+    align-items: center;
 }
+
+.btn a{
+    color: white;
+    margin-right: 2rem;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
 
 
 /* #endregion top */
@@ -318,7 +329,8 @@ footer.bottom {
 }
 
 .play_menu .row {
-    height: 45px;
+    margin: 0.6rem;
+    height: 30px;
     color: var(--light);
     justify-content: center;
     align-items: center;
