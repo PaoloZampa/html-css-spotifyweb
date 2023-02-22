@@ -31,6 +31,14 @@ img {
     max-width: 1200px;
 }
 
+.my_05{
+    margin: 0.5rem auto;
+}
+
+.my_1{
+    margin: 1rem auto;
+}
+
 .d_flex {
     display: flex;
 }
@@ -171,11 +179,16 @@ img {
 }
 
 .top .sidebar_bottom {
+    background-color: var(--darker);
     height: 90px;
 }
 
 .playlist {
     display: none;
+}
+
+.sidebar_menu{
+    margin: 1rem 0;
 }
 
 .sidebar_menu .row {
@@ -194,7 +207,36 @@ img {
 
 .playlist .row {
     color: var(--grey);
+    justify-content: center;
 }
+
+.sidebar_bottom .row{
+    height: 45px;
+}
+
+.sidebar_bottom .col_s_2{
+    text-align: center;
+}
+
+.sidebar_bottom .col_10{
+    color: var(--light);
+    justify-content: baseline;
+}
+
+.download_icon{
+    color: var(--grey);
+    width: 20px;
+}
+
+.profile_icon{
+    width: 80%;
+}
+
+.download_now{
+    font-size: 10px;
+    color: var(--grey);
+}
+
 
 /* main */
 
