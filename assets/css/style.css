@@ -23,6 +23,10 @@ img {
     margin: 0 auto;
 }
 
+.mw_1200{
+    max-width: 1200px;
+}
+
 .d_flex {
     display: flex;
 }
@@ -33,6 +37,10 @@ img {
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.unstyled{
+    list-style: none;
 }
 
 .col_2 {
@@ -154,6 +162,19 @@ img {
 .top>.content {
     width: calc(100% - 70px);
     overflow-y: auto;
+}
+
+.nav_bar ul{
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_bar li{
+    padding: 1rem;
+}
+
+.nav_bar a{
+    text-decoration: none;
 }
 
 /* footer */
