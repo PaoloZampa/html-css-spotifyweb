@@ -31,11 +31,11 @@ img {
     max-width: 1200px;
 }
 
-.my_05{
+.my_05 {
     margin: 0.5rem auto;
 }
 
-.my_1{
+.my_1 {
     margin: 1rem auto;
 }
 
@@ -187,7 +187,7 @@ img {
     display: none;
 }
 
-.sidebar_menu{
+.sidebar_menu {
     margin: 1rem 0;
 }
 
@@ -210,28 +210,28 @@ img {
     justify-content: center;
 }
 
-.sidebar_bottom .col_s_2{
+.sidebar_bottom .col_s_2 {
     text-align: center;
 }
 
-.sidebar_bottom .col_10{
+.sidebar_bottom .col_10 {
     color: var(--light);
     justify-content: baseline;
 }
 
-.download_icon{
+.download_icon {
     color: var(--grey);
     width: 20px;
 }
 
-.profile_icon{
+.profile_icon {
     width: 80%;
     background-color: var(--grey);
     border-radius: 50%;
     aspect-ratio: 1/1;
 }
 
-.download_now{
+.download_now {
     font-size: 10px;
     color: var(--grey);
 }
@@ -243,6 +243,7 @@ img {
 .top>.content {
     width: calc(100% - 50px);
     overflow-y: auto;
+    background-color: #141922;
 }
 
 .nav_bar ul {
@@ -269,12 +270,35 @@ img {
     align-items: center;
 }
 
-.btn a{
+.btn a {
     color: white;
     margin-right: 2rem;
     border: 2px solid white;
     padding: 1rem 2rem;
     border-radius: 2rem;
+}
+
+.main_content h1{
+    padding: 2rem 0;
+    color: white;
+}
+
+.main_content h2{
+    color: white;
+    font-size: 1rem;
+}
+
+.main_content .card{
+    padding: 0.5rem;
+    height: 100%;
+}
+
+.card_text{
+    text-align: center;
+}
+
+.subtitle{
+    color: var(--grey);
 }
 
 
@@ -415,7 +439,7 @@ footer.bottom {
         display: inline;
     }
 
-    .bb_grey{
+    .bb_grey {
         border-bottom: 1px solid var(--grey);
     }
 
@@ -523,6 +547,11 @@ footer.bottom {
 
     .col_lg_12 {
         width: calc(100% / 12 * 12);
+    }
+
+    .main_content h2{
+        color: white;
+        font-size: 1.5rem;
     }
 }
 
