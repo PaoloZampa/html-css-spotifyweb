@@ -210,10 +210,6 @@ img {
     justify-content: center;
 }
 
-.sidebar_bottom .row{
-    height: 45px;
-}
-
 .sidebar_bottom .col_s_2{
     text-align: center;
 }
@@ -230,12 +226,16 @@ img {
 
 .profile_icon{
     width: 80%;
+    background-color: var(--grey);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 .download_now{
     font-size: 10px;
     color: var(--grey);
 }
+
 
 
 /* main */
@@ -401,6 +401,10 @@ footer.bottom {
 
     .playlist {
         display: inline;
+    }
+
+    .bb_grey{
+        border-bottom: 1px solid var(--grey);
     }
 
 }
