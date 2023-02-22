@@ -1,24 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body class="debug">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css
+            ">
 
-    <div class="top">
-        <div class="sidebar d_flex direction_column">
-            <div class="sidebar_top"></div>
-            <div class="sidebar_bottom"></div>
+    </head>
+    <body class="debug">
+
+        <div class="top">
+            <div class="sidebar d_flex direction_column">
+
+                <!-- sidebar top -->
+                <div class="sidebar_top">
+
+                    <!-- logo -->
+                    <div class="logo_lg">
+                        <img src="./assets/img/logo.svg" alt="">
+                    </div>
+
+                    <div class="logo_xs">
+                        <img src="./assets/img/logo-small.svg" alt="">
+                    </div>
+
+                    <!-- sidebar menu -->
+                    <div class="sidebar_menu">
+                        <div class="row d_flex wrap">
+
+                            <!-- menu item 1 -->
+                            <div class="col_12 col_s_2">
+                                <div class="sidebar_icon">
+                                    <i class="fa-sharp fa-solid fa-house fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col_10">
+                                <div class="sidebar_icon_text">
+                                    <span>Home</span>
+                                </div>
+                            </div>
+
+                            <!-- menu item 2 -->
+                            <div class="col_12 col_s_2">
+                                <div class="sidebar_icon">
+                                    <i class="fa-sharp fa-solid fa-house fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col_10">
+                                <div class="sidebar_icon_text">
+                                    <span>Home</span>
+                                </div>
+                            </div>
+
+                            <!-- menu item 3 -->
+                            <div class="col_12 col_s_2">
+                                <div class="sidebar_icon">
+                                    <i class="fa-sharp fa-solid fa-house fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col_10">
+                                <div class="sidebar_icon_text">
+                                    <span>Home</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- playlist -->
+
+                    <div class="playlist"></div>
+
+                </div>
+
+                <!-- sidebar bottom -->
+                <div class="sidebar_bottom"></div>
+
+            </div>
         </div>
-    </div>
 
-    <main class="content"></main>
+        <!-- /top -->
 
-    <footer class="bottom"></footer>
+        <main class="content"></main>
 
-</body>
+        <!-- /main content -->
+
+        <footer class="bottom"></footer>
+
+        <!-- /footer -->
+
+    </body>
 </html>

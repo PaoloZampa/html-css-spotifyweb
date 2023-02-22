@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* #region utilities */
 
-:root{
+:root {
     --dark: #141922;
     --darker: #000000;
     --light: #d2d2d2;
@@ -20,6 +24,54 @@
 
 .direction_column {
     flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.col_2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col_3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col_4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col_5 {
+    width: calc(100% / 12 * 5);
+}
+
+.col_6 {
+    width: calc(100% / 12 * 6);
+}
+
+.col_7 {
+    width: calc(100% / 12 * 7);
+}
+
+.col_8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col_9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col_10 {
+    width: calc(100% / 12 * 10);
+}
+
+.col_11 {
+    width: calc(100% / 12 * 11);
+}
+
+.col_12 {
+    width: calc(100% / 12 * 12);
 }
 
 /* #endregion utilities */
@@ -42,11 +94,11 @@
     background-color: brown;
 }
 
-.sidebar_bottom{
+.sidebar_bottom {
     background-color: blue;
 }
 
-.sidebar_top{
+.sidebar_top {
     background-color: chartreuse;
 }
 
@@ -54,9 +106,19 @@
 
 /* #region top */
 
+/* sidebar */
+
 .top {
     height: calc(100vh - 80px);
     display: flex;
+}
+
+.top .logo_lg {
+    display: none;
+}
+
+.sidebar_icon_text {
+    display: none;
 }
 
 .top>.sidebar {
@@ -64,21 +126,25 @@
     overflow-y: hidden;
 }
 
+.top .sidebar_top {
+    height: calc(100% - 60px);
+}
+
+.top .sidebar_bottom {
+    height: 60px;
+}
+
+/* main */
+
 .top>.content {
     width: calc(100% - 70px);
     overflow-y: auto;
 }
 
+/* footer */
+
 footer.bottom {
     height: 80px;
-}
-
-.top .sidebar_top{
-    height: calc(100% - 60px);
-}
-
-.top .sidebar_bottom{
-    height: 60px;
 }
 
 /* #endregion top */
@@ -91,12 +157,29 @@ footer.bottom {
 /* #region mediaquery */
 
 @media screen and (min-width: 768px) {
+
+    .col_s_2 {
+        width: calc(100% / 12 * 2);
+    }
+
     .top>.sidebar {
         width: 220px;
     }
 
     .top>.content {
         width: calc(100% - 220px);
+    }
+
+    .top .logo_xs {
+        display: none;
+    }
+
+    .top .logo_lg {
+        display: block;
+    }
+
+    .sidebar_icon_text {
+        display: inline-block;
     }
 }
 
