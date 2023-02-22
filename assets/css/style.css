@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Circular Std', sans-serif;
+}
+
 img {
     max-width: 100%;
 }
@@ -177,7 +181,7 @@ img {
     text-decoration: none;
 }
 
-.upgrade{
+.upgrade {
     background-color: var(--darker);
     position: sticky;
     top: 0;
