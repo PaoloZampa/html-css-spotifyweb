@@ -169,20 +169,20 @@ img {
     color: var(--grey);
 }
 
-.sidebar_icon_text:hover{
+.sidebar_icon_text:hover {
     color: white;
     cursor: pointer;
 }
 
-.sidebar_menu .sidebar_icon:hover{
+.sidebar_menu .sidebar_icon:hover {
     border-left: 2px solid var(--green);
 }
 
-.sidebar_menu .container_90{
+.sidebar_menu .container_90 {
     width: 100%;
 }
 
-.sidebar_icon{
+.sidebar_icon {
     padding-left: 0.3rem;
 }
 
@@ -201,11 +201,11 @@ img {
     height: 90px;
 }
 
-.playlist .col_12{
+.playlist .col_12 {
     color: var(--grey);
 }
 
-.playlist .col_12:hover{
+.playlist .col_12:hover {
     color: white;
     cursor: pointer;
 }
@@ -317,11 +317,11 @@ img {
     border-radius: 2rem;
 }
 
-.btn{
+.btn {
     transition: 0.5s ease;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.1);
 }
 
@@ -352,11 +352,11 @@ img {
     z-index: 4000;
 }
 
-.card_img:hover img{
+.card_img:hover img {
     border-radius: 10px;
 }
 
-.card_img img{
+.card_img img {
     transition: 0.5s ease;
 }
 
@@ -458,22 +458,22 @@ footer.bottom {
     color: var(--grey);
 }
 
-.track h4{
+.track h4 {
     color: white !important;
 }
 
-.track i:hover{
+.track i:hover {
     color: white;
     cursor: pointer;
 }
 
-.track span:hover{
+.track span:hover {
     color: white;
     text-decoration: underline;
     cursor: pointer;
 }
 
-.play_menu i:hover{
+.play_menu i:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
