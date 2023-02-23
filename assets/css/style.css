@@ -166,6 +166,24 @@ img {
 
 .sidebar_icon_text {
     display: none;
+    color: var(--grey);
+}
+
+.sidebar_icon_text:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar_menu .sidebar_icon:hover{
+    border-left: 2px solid var(--green);
+}
+
+.sidebar_menu .container_90{
+    width: 100%;
+}
+
+.sidebar_icon{
+    padding-left: 0.3rem;
 }
 
 .top>.sidebar {
@@ -182,6 +200,16 @@ img {
     background-color: var(--darker);
     height: 90px;
 }
+
+.playlist .col_12{
+    color: var(--grey);
+}
+
+.playlist .col_12:hover{
+    color: white;
+    cursor: pointer;
+}
+
 
 .playlist {
     display: none;
@@ -270,6 +298,7 @@ img {
 }
 
 .upgrade {
+    z-index: 10000;
     background-color: #080b1279;
     position: sticky;
     top: 0;
@@ -300,6 +329,7 @@ img {
 }
 
 .main_content h2 {
+    padding-top: 1rem;
     color: white;
     font-size: 1rem;
 }
@@ -428,7 +458,7 @@ footer.bottom {
 }
 
 .track h4{
-    color: white; !important
+    color: white !important;
 }
 
 .track i:hover{
